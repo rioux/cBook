@@ -1,22 +1,17 @@
-<!DOCTYPE html>
 <html>
-<script>
-
-
-function fStart(){
-document.getElementById('mn').innerHTML = "ssssss";
-}
-
-
-</script>
-<script src="https://embed.github.com/view/geojson/<username>/<repo>/<ref>/<path_to_file>"></script>
-<body>
-
-<button onclick="fStart()">test</button>
-<div id="mn">
-choice
-</div>
-  
+  <head>
+  </head>
+  <body>
+    <script>
+      var txtFile = "/tmp/testing.txt";
+      var file = new File(txtFile);
+      var str = "My string of text";
  
-</body>
+      file.open("w"); // open file with write access
+      file.writeln(str);
+      file.write(str);
+      file.close();
+    </script>
+<h1>some text</h1>
+  </body>
 </html>
