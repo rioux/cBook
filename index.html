@@ -1,17 +1,31 @@
+<!DOCTYPE html>
 <html>
-  <head>
-  </head>
-  <body>
-    <script>
-      var txtFile = "/tmp/testing.txt";
-      var file = new File(txtFile);
-      var str = "My string of text";
+<script>
+
+
+function fStart(){
+
+const url1 = 'https://raw.githubusercontent.com/ProjectSakura/OTA/10/changelog/changelog_beryllium.txt'
+const response = await fetch(url1);
+const data = await response.text();
+console.log(data);
+
+
+
+document.getElementById('mn').innerHTML = "ssssss";
+}
+
+
+</script>
+
+
+<body>
+
+<button onclick="fStart()">test</button>
+<div id="mn">
+choice
+</div>
+  
  
-      file.open("w"); // open file with write access
-      file.writeln(str);
-      file.write(str);
-      file.close();
-    </script>
-<h1>some text</h1>
-  </body>
+</body>
 </html>
